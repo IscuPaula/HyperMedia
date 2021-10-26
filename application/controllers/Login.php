@@ -12,7 +12,9 @@ class Login extends CI_CONTROLLER
     }
     else
     {
-        $this->load->model('Register_model');
+        $this->load->model('User_model');
     }
 }
 }
+
+?>

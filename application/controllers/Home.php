@@ -8,3 +8,4 @@ class Home extends CI_CONTROLLER
         $this->load->view('home_view');
     }
 }
+?>

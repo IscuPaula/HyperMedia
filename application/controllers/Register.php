@@ -1,10 +1,10 @@
 <?php 
 class Register extends CI_CONTROLLER
-{
+
+{   
     
     public function index()
     {
-
         $this->form_validation->set_rules('fname','FirstName','required');
         $this->form_validation->set_rules('lname','LastName','required');
         $this->form_validation->set_rules('username','Username','required');

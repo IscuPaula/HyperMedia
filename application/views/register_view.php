@@ -3,40 +3,39 @@
     <head>
         <title> Register </title>
     </head>
-    <body>
+<body>
     <form method="post"action="<?php echo site_url('Register');?>">
 
-         <div class="container">
-             <h1>Fill details </h1>
-             <div class="form-floating">
+        <div class="container">
+            <h1>Fill details </h1>
+            <div class="form-floating">
                 <label for="fname"> <b> First Name </b> </label><br>
-                <input type="text" name="fname" id="fname">
+                <input type="text" name="fname" id="fname" required value="<?php echo set_value('fname');?>">
             </div>
 
             <div class="form-floating">
-             <label for="lname"><b> Last Name </b> </label> <br>
-             <input type="text" name="lname" id="lname">
-             </div>
-
-             <div class="form-floating">
-             <label for="usernmae"> <b> Username </b> </label> <br>
-             <input type="text" name="usernmae" id="usernmae">
-             </div>
-
-             <div class="form-floating">
-             <label for="email"> <b> Email </b> </label><br>
-             <input type="text" name="email" id="email">
+                <label for="lname"><b> Last Name </b> </label> <br>
+                <input type="text" name="lname" required value="<?php echo set_value('lname');?>">
             </div>
 
-             <div class="form-floating">
-             <label for="password"> <b> Password </b> </label><br>
-             <input type="password" name="password" id="password">
-             </div>
+            <div class="form-floating">
+                <label for="usernmae"> <b> Username </b> </label> <br>
+                <input type="text" name="usernmae" required value="<?php echo set_value('username');?>">
+            </div>
+
+            <div class="form-floating">
+                <label for="email"> <b> Email </b> </label><br>
+                <input type="text" name="email" required value="<?php echo set_value('email');?>">
+            </div>
+
+            <div class="form-floating">
+                <label for="password"> <b> Password </b> </label><br>
+                <input type="password" name="password" required value="<?php echo set_value('password');?>">
+            </div>
+                <button class="btn-primary"  type="submit">Register</button> <br>
+                If you  have account, please <a href="login">Login</a>
         </div>
-        <button class="w-100 btn btn-lg btn-primary" type="submit">Register</button> <br>
-        If you  have account, please <a href="login">Login</a>
-  </div>
   
-</form>
-    </body>
+    </form>
+</body>
 </html>

@@ -13,8 +13,12 @@ class Login extends CI_CONTROLLER
     else
     {
         $this->load->model('User_model');
+        if($this->User_model->verify_login())
+        {
+            $this->session->set_userdata('username',$this->input->post('uname'));
+            $this->session->set_userdata('isLogged',true);
+
+        }
     }
 }
 }
-
-?>

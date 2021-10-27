@@ -1,15 +1,12 @@
-<DOCTYPE html>
+<doctype html>
 <html lang='en'>
     <head>
+        <meta charset = "utf-8"> 
         <title> Home </title>      
-        <link rel = "stylesheet" type = "text/css"  href = "<?php echo base_url(); ?>css/home.css">  
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel = "stylesheet" type = "text/css" href = "<?php echo base_url(); ?>css/home.css">
     </head>
     <body>
-        <div class='container'>
-            Welcome!
             <a href="login">Login</a>
             <a href="register">Register</a>
-        </div>
     </body>
 </html> 

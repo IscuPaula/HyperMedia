@@ -1,5 +1,4 @@
-body 
+body
 { 
-    background: radial-gradient(circle, black, white);
-    background-image: url('C:\xampp\htdocs\HyperMedia\home.jpeg');
+   background-color: blue;
 }

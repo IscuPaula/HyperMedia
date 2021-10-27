@@ -4,8 +4,8 @@
         <title> Login </title>
     </head>
 <body>
-    <form method="post" action="<?php echo site_url('Login');?>">
-
+<?php echo form_open('home'); ?>
+    <form>
         <div class="container">
             <h1>Fill details </h1>
 

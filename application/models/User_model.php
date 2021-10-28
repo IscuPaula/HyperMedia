@@ -1,29 +1,35 @@
 <?php
 class User_model extends CI_MODEL
 {
-    function insert_user()
+    function insert_user($data)
     {
+
         //accesing data with post method
-
-        $fname = $this->input->post('fname');
-        $lname = $this->input->post('lname');
-        $uname = $this->input->post('uname');
-        $email = $this->input->post('email');
-        $password = $this->input->post('password');
-
-        //insert into db(user)
-        $data=array
-        (   
-            'fname'=> $fname,
-            'lname'=> $lname,
-            'username'=> $uname,
-            'email' => $email,
-            'password' => $password,
-
-        );
-            $this->insert->db('user',$data);
+        $this->db->insert('user',$data);
+        //echo $this->db->last_query();
+        //echo $this->db->_error_message();
+        if($data)
+        {   
+            return true;
+        }
+        else
+        {
+            return false;
+        }
 
     }
-
+    function verify_user($data)
+    {
+        if(sizeof($data) > 0)
+        {
+            //logat succes
+            return true;
+     
+        }else
+        {
+            //login fail, retry
+            return false;
+        }
+    }
 }
 ?>

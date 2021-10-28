@@ -2,10 +2,11 @@
 <html lang="en">
     <head>
         <title> Register </title>
+        <link rel = "stylesheet" type = "text/css" href = "<?php echo base_url(); ?>css/register.css">
+
     </head>
 <body>
-    <?php echo form_open('login'); ?>
-    <form method="post"action="<?php echo site_url('Register');?>">
+    <form method="post" action="<?php echo site_url('Register');?>">
         <div class="container">
             <h1>Fill details </h1>
             <div class="form-floating">
@@ -20,7 +21,7 @@
 
             <div class="form-floating">
                 <label for="usernmae"> <b> Username </b> </label> <br>
-                <input type="text" name="usernmae" value="<?php echo set_value('username');?>"/>
+                <input type="text" name="username" value="<?php echo set_value('username');?>"/>
             </div>
 
             <div class="form-floating">
@@ -32,7 +33,7 @@
                 <label for="password"> <b> Password </b> </label><br>
                 <input type="password" name="password" value="<?php echo set_value('password');?>"/>
             </div>
-                <input type="submit" value="Submit"></button> <br>
+                <input type="submit" value="Register"></input> <br>
                 If you  have account, please <a href="login">Login</a>
         </div>
     </form>

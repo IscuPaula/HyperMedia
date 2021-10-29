@@ -10,11 +10,11 @@ class Login extends CI_CONTROLLER
          if($this->User_model->verify_user()===TRUE)
          {
              
-            echo ('validare corecta');
+           // echo ('validare corecta');
             redirect('home','refresh');
          }
          else{
-             echo('validare incorecta');
+             //echo('validare incorecta');
          }
   
          

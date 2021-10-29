@@ -1,0 +1,38 @@
+form
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.form-floating
+{
+    font-size:18;
+}
+input[type=text],input[type=password] 
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border;
+}
+a 
+{
+    color:black !important;
+    text-decoration: none;
+    font-size:15px;
+}
+input[type=submit] 
+{
+    background-color:GREEN;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15;
+  }
+
+  

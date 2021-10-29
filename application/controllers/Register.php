@@ -51,7 +51,7 @@ class Register extends CI_CONTROLLER
         }
         else 
         {
-            echo('your details');
+            //echo('your details');
             return true;
 
         }

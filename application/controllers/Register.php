@@ -30,7 +30,7 @@ class Register extends CI_CONTROLLER
         $lname = $this->input->post('lname');
         $username = $this->input->post('username');
         $email = $this->input->post('email');
-        $password =md5( $this->input->post('password'));
+        $password = $this->input->post('password');
 
         //insert into db(user)
         $data=array

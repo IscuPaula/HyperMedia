@@ -18,16 +18,29 @@ class User_model extends CI_MODEL
         }
 
     }
-    function verify_user($data)
+    function verify_user()
     {
-        if(sizeof($data) > 0)
+        
+        $username = $this->input->post('username');
+        $password = $this->input->post('password');
+        
+        $data=array
+        (
+            'Username'=> $username,
+            'Password'=> $password
+        );
+        
+        $query = $this->db->get_where('user', $data)->result();
+        $this->db->get('user',$data);
+        
+
+        if(sizeof($query) >0)
         {
-            //logat succes
             return true;
+            print_r($query);
      
         }else
         {
-            //login fail, retry
             return false;
         }
     }

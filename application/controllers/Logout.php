@@ -8,7 +8,8 @@ class Logout extends CI_Controller
         {
                 $_SESSION['username'] = "";
                 $_SESSION['isLogged'] = false;
-                redirect('home');
+                redirect('register');
+                
                 
         }
 
